@@ -24,7 +24,14 @@ public class Program2 {
 		}
 		
 		System.out.println("=== TEST 3: Update ===");
+		dep = departmentDao.findById(1);
+		dep.setName("Smartphones");
+		departmentDao.update(dep);
+		System.out.println("Update Complete!");
+		
+		System.out.println("=== TEST 3: Insert ===");
 
+		
 	}
 
 }
