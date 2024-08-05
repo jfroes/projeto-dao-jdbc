@@ -48,6 +48,13 @@ public class Program {
 		seller.setEmail("marta.waine@gmail.com");
 		sellerDao.update(seller);
 		System.out.println("Update Completed");
+		
+		System.out.println("\n=== TESTE 6: seller delete ===");
+		
+		sellerDao.deleteById(10);
+		
+		System.out.println("Deletetation complete");
+
 	}
 
 }
